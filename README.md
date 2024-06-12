@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is the repository for Ivey Product Society's website.
+Authors: Bruce Liu, Sophia Ma
+Date: June 11, 2024
+Status: Work in Progress
 
 ## Getting Started
 
