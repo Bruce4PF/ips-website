@@ -1,6 +1,9 @@
 This is the repository for Ivey Product Society's website.
+
 Authors: Bruce Liu, Sophia Ma
+
 Date: June 11, 2024
+
 Status: Work in Progress
 
 ## Getting Started
