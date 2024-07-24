@@ -4,11 +4,17 @@ import { RiMoonFill, RiSunLine } from 'react-icons/ri';
 
 const ThemeToggle: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const CustomBg = useColorModeValue('rgba(251,211,141,0.5)', 'whiteAlpha.200');
-  const CustomHoverBg = useColorModeValue('rgba(251,211,141,0.8)', 'whiteAlpha.300');
+  const CustomBg = useColorModeValue('#EFF2F6', '#292D32');
+  const CustomHoverBg = useColorModeValue('#e4e7eb', '#373b40');
+
+  const innerShadow = useColorModeValue(
+    '2px 2px 6px rgba(174, 174, 192, 0.40) inset, -2px -2px 6px #FFFFFF inset', // Light mode shadow
+    '2px 2px 6px rgba(8, 8, 14, 0.40) inset, -2px -2px 6px #31373E inset'  // Dark mode shadow
+  );
 
   const CustomIconButton = chakra(IconButton, {
     baseStyle: {
+      boxShadow: innerShadow,
       _hover: {
         bg: CustomHoverBg,
         bgOpacity: '0%',

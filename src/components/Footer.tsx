@@ -1,6 +1,6 @@
 import FadeInUp from '@/animations/FadeInUp';
 import { ButtonGroup, Container, IconButton, Stack, Text, Image, Flex, Spacer, Link } from '@chakra-ui/react';
-import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     const websiteUrl = 'https://www.chucklechallenge.com';
@@ -13,17 +13,17 @@ const Footer: React.FC = () => {
     return (
         <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }} maxWidth='container.md'>
             <Stack spacing={{ base: '4', md: '5' }}>
-                <Stack justify="space-between" direction="row" align="center">
+                <Stack justify="space-between" direction="row" align="flex-end">
                     <FadeInUp index={0}>
                         <Image
-                            src="../Chuckle Challenge v2 Logo.png"
-                            height="30"
+                            src="../IPS Full Logo.png"
+                            height="50"
                         />
                     </FadeInUp>
                     <FadeInUp index={1}>
                         <Flex alignItems='center' gap={3}>
                             <Text fontSize="sm" color="fg.subtle" fontWeight='medium'>
-                                Share it on:
+                                More of us:
                             </Text>
                             <ButtonGroup variant="tertiary">
                                 <IconButton
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                                     href={facebookShareUrl}
                                     target="_blank"
                                     aria-label='Facebook'
-                                    icon={<FaFacebook fontSize="1.25rem" />}
+                                    icon={<FaInstagram fontSize="1.25rem" />}
                                 />
                                 <IconButton
                                     as="a"
@@ -54,27 +54,14 @@ const Footer: React.FC = () => {
                 <Flex alignItems='end'>
                     <FadeInUp index={2}>
                         <Text fontSize="sm" color="fg.subtle">
-                            &copy; {new Date().getFullYear()} — Bruce Liu & Aidan LoStracco
+                            &copy; {new Date().getFullYear()} — Ivey Product Society
                         </Text>
                     </FadeInUp>
                     <Spacer />
                     <FadeInUp index={3}>
-                        <Flex textAlign='right' gap={7}>
-                            <Text fontSize="sm" color="fg.subtle" fontWeight="semibold">
+                            <Text fontSize="sm" color="fg.subtle">
                                 Made with ❤️ in Canada
                             </Text>
-                            <Link
-                                as='a'
-                                fontSize='sm'
-                                color='fg.subtle'
-                                fontWeight='semibold'
-                                target='_blank'
-                                aria-label='Buy Me A Coffee Link'
-                                href="https://www.buymeacoffee.com/BruceLiu"
-                            >
-                                Buy us a coffee!☕
-                            </Link>
-                        </Flex>
                     </FadeInUp>
                 </Flex>
             </Stack>
