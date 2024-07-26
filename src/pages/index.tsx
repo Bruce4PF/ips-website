@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
 
       <Header />
 
-      <Container maxWidth='container.lg' centerContent pt={300} pb={1000} gap={500}>
+      <Container maxWidth='container.lg' centerContent pt={300} pb={1000}>
         <Hero />
         <AlumniPlacements />
 

@@ -41,7 +41,7 @@ const ParallaxImages: React.FC = () => {
                 src="/Sphere Purple.png"
                 alt="Image 3"
                 position="absolute"
-                top="30%"
+                top="25%"
                 left="65%"
                 transform={`translateY(${scrollY * 0.06}px)`}
                 transition="transform 0.1s ease-out"
@@ -51,7 +51,7 @@ const ParallaxImages: React.FC = () => {
                 src="/Round Cube Green.png"
                 alt="Image 3"
                 position="absolute"
-                top="30%"
+                top="25%"
                 left="30%"
                 transform={`translateY(${scrollY * 0.15}px)`}
                 transition="transform 0.1s ease-out"
