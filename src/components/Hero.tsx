@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const Hero: React.FC = () => {
     const [offset, setOffset] = useState({ x: 0, y: 0 });
 
-    const handleMouseMove = (event: MouseEvent) => {
+    const handleMouseMove = (event: React.MouseEvent<HTMLHeadingElement, MouseEvent>) => {
         const { clientX, clientY, currentTarget } = event;
         const { offsetWidth, offsetHeight } = currentTarget as HTMLElement;
         const centerX = offsetWidth / 2;
