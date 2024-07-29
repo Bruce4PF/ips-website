@@ -1,13 +1,24 @@
 import Hover from "@/animations/Hover";
 import TabFadeInUp from "@/animations/TabFadeInUp";
-import { Box, Container, Grid, GridItem, Heading, Image, useColorModeValue } from "@chakra-ui/react";
+import { Box, Center, Grid, GridItem, Heading, Image, useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 const AlumniPlacements: React.FC = () => {
     const CustomBg = useColorModeValue('', '');
+    const { colorMode } = useColorMode();
+    const AmazonImage = colorMode === "dark" ? "/Company Logos/Amazon Logo Dark.png" : "/Company Logos/Amazon Logo.png";
+    const MetaImage = colorMode === "dark" ? "/Company Logos/Meta Logo Dark.png" : "/Company Logos/Meta Logo.png";
+    const UberLogo = colorMode === "dark" ? "/Company Logos/Uber Logo Dark.png" : "/Company Logos/Uber Logo.png";
+    const McKinseyLogo = colorMode === "dark" ? "/Company Logos/McKinsey Logo Dark.png" : "/Company Logos/McKinsey Logo.png";
+    const RobloxLogo = colorMode === "dark" ? "/Company Logos/Roblox Logo Dark.png" : "/Company Logos/Roblox Logo.png";
+    const WealthsimpleLogo = colorMode === "dark" ? "/Company Logos/Wealthsimple Logo Dark.png" : "/Company Logos/Wealthsimple Logo.png";
+
+
+
+
 
     return (
-        <Container maxWidth="100%" mt={500}>
-            <Heading>
+        <Center flexDirection="column" maxWidth="100%" mt={350}>
+            <Heading fontSize="5xl">
                 Alumni Placements
             </Heading>
             <Grid templateColumns='repeat(5, 1fr)' gap={4} pt={10}>
@@ -60,7 +71,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/Amazon Logo.png"
+                                    src={AmazonImage}
                                     alt="Amazon Logo"
                                     width="100%"
                                 />
@@ -79,7 +90,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/Meta Logo.png"
+                                    src={MetaImage}
                                     alt="Meta Logo"
                                     width="100%"
                                 />
@@ -117,7 +128,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/Uber Logo.png"
+                                    src={UberLogo}
                                     alt="Uber Logo"
                                     width="100%"
                                 />
@@ -136,7 +147,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/McKinsey Logo.png"
+                                    src={McKinseyLogo}
                                     alt="McKinsey Logo"
                                     width="100%"
                                 />
@@ -275,7 +286,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/Roblox Logo Black.png"
+                                    src={RobloxLogo}
                                     alt="Roblox Logo"
                                     width="100%"
                                 />
@@ -294,7 +305,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/Wealthsimple Logo.png"
+                                    src={WealthsimpleLogo}
                                     alt="Wealthsimple Logo"
                                     width="100%"
                                 />
@@ -303,7 +314,7 @@ const AlumniPlacements: React.FC = () => {
                     </GridItem>
                 </TabFadeInUp>
             </Grid>
-        </Container>
+        </Center>
     );
 }
 

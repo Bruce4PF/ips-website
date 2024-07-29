@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs";
 import AlumniPlacements from "@/components/AlumniPlacements";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -19,9 +20,10 @@ export default function Home(): JSX.Element {
 
       <Header />
 
-      <Container maxWidth='container.lg' centerContent pt={300} pb={1000}>
+      <Container maxWidth='container.lg' centerContent pt={300} pb={1000} gap={150}>
         <Hero />
         <AlumniPlacements />
+        <AboutUs />
 
       </Container>
 
