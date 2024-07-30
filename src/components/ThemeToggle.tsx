@@ -4,7 +4,7 @@ import { RiMoonFill, RiSunLine } from 'react-icons/ri';
 
 const ThemeToggle: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const CustomBg = useColorModeValue('#EFF2F6', '#292D32');
+  const CustomBg = useColorModeValue('#FFFFFF', '#292D32');
   const CustomHoverBg = useColorModeValue('#e4e7eb', '#373b40');
 
   const innerShadow = useColorModeValue(

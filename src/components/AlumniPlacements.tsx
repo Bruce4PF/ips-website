@@ -11,10 +11,7 @@ const AlumniPlacements: React.FC = () => {
     const McKinseyLogo = colorMode === "dark" ? "/Company Logos/McKinsey Logo Dark.png" : "/Company Logos/McKinsey Logo.png";
     const RobloxLogo = colorMode === "dark" ? "/Company Logos/Roblox Logo Dark.png" : "/Company Logos/Roblox Logo.png";
     const WealthsimpleLogo = colorMode === "dark" ? "/Company Logos/Wealthsimple Logo Dark.png" : "/Company Logos/Wealthsimple Logo.png";
-
-
-
-
+    const MicrosoftLogo = colorMode === "dark" ? "/Company Logos/Microsoft Logo Dark.png" : "/Company Logos/Microsoft Logo.png";
 
     return (
         <Center flexDirection="column" maxWidth="100%" mt={350}>
@@ -52,7 +49,7 @@ const AlumniPlacements: React.FC = () => {
                                 alignContent="center"
                             >
                                 <Image
-                                    src="/Company Logos/Microsoft Logo.png"
+                                    src={MicrosoftLogo}
                                     alt="Microsoft Logo"
                                     width="100%"
                                 />

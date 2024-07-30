@@ -3,6 +3,7 @@ import AlumniPlacements from "@/components/AlumniPlacements";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import OurTeam from "@/components/OurTeam";
 import ParallaxImages from "@/components/ParallaxImages";
 import theme from "@/styles/theme";
 import { ChakraProvider, Container } from "@chakra-ui/react";
@@ -24,6 +25,7 @@ export default function Home(): JSX.Element {
         <Hero />
         <AlumniPlacements />
         <AboutUs />
+        <OurTeam />
 
       </Container>
 

@@ -9,3 +9,36 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    position: absolute;
+    will-change: transform;
+}
+
+.parallax-layer-1 {
+    transform: translateY(0);
+}
+
+.parallax-layer-2 {
+    transform: translateY(0);
+}
+
+.parallax-layer-3 {
+    transform: translateY(0);
+}
+
+.parallax-layer-4 {
+    transform: translateY(0);
+}
+
+.parallax-layer-5 {
+    transform: translateY(0);
+}
+
+.parallax-layer-6 {
+    transform: translateY(0);
+}

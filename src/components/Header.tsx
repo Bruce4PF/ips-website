@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           <Center>
             <Image
               src={logoSrc}
-              height="120"
+              height="100"
               onClick={handleLogoClick}
               style={{ cursor: "pointer" }}
             />
