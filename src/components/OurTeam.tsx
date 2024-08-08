@@ -1,25 +1,33 @@
 import Hover from "@/animations/Hover";
 import { Center, chakra, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, useColorModeValue } from "@chakra-ui/react";
-import TheClub from "./TheClub";
-import TheNetwork from "./TheNetwork";
+import Team2023 from "./Team2023";
+import Team2024 from "./Team2024";
 
 const OurTeam: React.FC = () => {
 
-const CustomBg = useColorModeValue('gray.200', 'gray.700');
-const CustomColor = useColorModeValue('black', 'white');
+    const CustomBg = useColorModeValue('#FFFFFF', '#292D32');
+    const CustomColor = useColorModeValue('#000000', '#FFFFFF');
+    const inactiveColor = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
+    const innerShadow = useColorModeValue(
+        '2px 2px 6px rgba(174, 174, 192, 0.40) inset, -2px -2px 6px #FFFFFF inset', // Light mode shadow
+        '2px 2px 6px rgba(8, 8, 14, 0.40) inset, -2px -2px 6px #31373E inset'  // Dark mode shadow
+    );
 
-const CustomTab = chakra(Tab, {
-    baseStyle: {
-        _selected: {
-            color: CustomColor,
-            bg: CustomBg
-        },
-        _hover: {
-            color: CustomColor,
-            bg: CustomBg
+    const CustomTab = chakra(Tab, {
+        baseStyle: {
+            _selected: {
+                color: CustomColor,
+                bg: CustomBg,
+                boxShadow: innerShadow
+            },
+            _hover: {
+                color: CustomColor,
+                bg: CustomBg,
+                boxShadow: innerShadow
+            },
+            color: inactiveColor,
         }
-    },
-})
+    })
 
     return (
         <Center flexDirection="column" maxWidth="100%" gap={20}>
@@ -35,7 +43,7 @@ const CustomTab = chakra(Tab, {
                             </CustomTab>
                         </Hover>
                         <Hover>
-                            <CustomTab fontWeight='bold'>
+                            <CustomTab fontWeight='bold' >
                                 2023
                             </CustomTab>
                         </Hover>
@@ -44,10 +52,10 @@ const CustomTab = chakra(Tab, {
 
                 <TabPanels mt='3rem'>
                     <TabPanel>
-                        <TheClub />
+                        <Team2024 />
                     </TabPanel>
                     <TabPanel>
-                        <TheNetwork />
+                        <Team2023 />
                     </TabPanel>
                 </TabPanels>
 

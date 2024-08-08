@@ -33,7 +33,7 @@ const ParallaxImages: React.FC = () => {
                 position="absolute"
                 top="10%"
                 right="12%"
-                transform={`translateY(${scrollY * 0.55}px)`}
+                transform={`translateY(${scrollY * 0.40}px)`}
                 transition="transform 0.1s ease-out"
                 zIndex={-9999}
             />

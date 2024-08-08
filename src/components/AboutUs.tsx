@@ -22,7 +22,7 @@ const AboutUs: React.FC = () => {
                             lineHeight='8'
                             maxWidth='80%'
                         >
-                            Building the next generation of <br />
+                            Building the next generation of{' '}
                             <chakra.span
                                 bgGradient="linear(to-l, #9453FF, #43B87E)"
                                 bgClip="text"

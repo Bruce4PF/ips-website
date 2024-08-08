@@ -1,13 +1,13 @@
 import { Center, Heading } from "@chakra-ui/react";
 
-const TheClub: React.FC = () => {
+const Team2023: React.FC = () => {
     return (
         <Center>
             <Heading>
-                The Club
+                The Network
             </Heading>
         </Center>
     );
 }
 
-export default TheClub;
+export default Team2023;
