@@ -1,5 +1,5 @@
 import TabFadeInUp from "@/animations/TabFadeInUp";
-import { Center, chakra, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Center, chakra, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import AboutUsShapes from "./AboutUsShapes";
 
 const AboutUs: React.FC = () => {
@@ -7,12 +7,11 @@ const AboutUs: React.FC = () => {
     const textColor = useColorModeValue('gray.600', 'gray.400');
 
     return (
-        <Center flexDirection="column" gap={20}>
+        <Box flexDirection="column" gap={20}>
             <Heading fontSize="5xl">
                 About Us
             </Heading>
-            <Flex flexDirection='row' justifyContent='center' alignItems='center' gap={20}>
-                <AboutUsShapes />
+            <Flex flexDirection='row' justifyContent='center' alignItems='center' gap={20} mt={10}>
                 <Stack spacing={4} maxWidth='50%'>
                     <TabFadeInUp index={0}>
                         <Heading
@@ -64,8 +63,9 @@ const AboutUs: React.FC = () => {
                         </Text>
                     </TabFadeInUp>
                 </Stack>
+                <AboutUsShapes />
             </Flex>
-        </Center>
+        </Box>
     )
 }
 

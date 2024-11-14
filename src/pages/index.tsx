@@ -3,6 +3,7 @@ import AlumniPlacements from "@/components/AlumniPlacements";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import OurProductLine from "@/components/OurProductLine";
 import OurTeam from "@/components/OurTeam";
 import ParallaxImages from "@/components/ParallaxImages";
 import theme from "@/styles/theme";
@@ -25,6 +26,7 @@ export default function Home(): JSX.Element {
         <Hero />
         <AlumniPlacements />
         <AboutUs />
+        <OurProductLine />
         <OurTeam />
 
       </Container>

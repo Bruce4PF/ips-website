@@ -1,6 +1,6 @@
 import Hover from "@/animations/Hover";
 import TabFadeInUp from "@/animations/TabFadeInUp";
-import { Box, Center, Grid, GridItem, Heading, Image, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, Center, Grid, GridItem, Heading, Image, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 const AlumniPlacements: React.FC = () => {
     const CustomBg = useColorModeValue('', '');
@@ -12,19 +12,20 @@ const AlumniPlacements: React.FC = () => {
     const RobloxLogo = colorMode === "dark" ? "/Company Logos/Roblox Logo Dark.png" : "/Company Logos/Roblox Logo.png";
     const WealthsimpleLogo = colorMode === "dark" ? "/Company Logos/Wealthsimple Logo Dark.png" : "/Company Logos/Wealthsimple Logo.png";
     const MicrosoftLogo = colorMode === "dark" ? "/Company Logos/Microsoft Logo Dark.png" : "/Company Logos/Microsoft Logo.png";
+    const textColor = useColorModeValue('gray.600', 'gray.400');
 
     return (
-        <Center flexDirection="column" maxWidth="100%" mt={350}>
+        <Box flexDirection="column" maxWidth="100%" mt={350}>
             <Heading fontSize="5xl">
                 Alumni Placements
             </Heading>
-            <Grid templateColumns='repeat(5, 1fr)' gap={4} pt={10}>
+            <Grid templateColumns='repeat(5, 1fr)' gap={4} pt={12}>
                 <TabFadeInUp index={0}>
                     <GridItem>
                         <Hover>
                             <Box
                                 bg={CustomBg}
-                                padding={2}
+                                padding={0}
                                 borderRadius='lg'
                                 height="5rem"
                                 alignContent="center"
@@ -311,7 +312,7 @@ const AlumniPlacements: React.FC = () => {
                     </GridItem>
                 </TabFadeInUp>
             </Grid>
-        </Center>
+        </Box>
     );
 }
 

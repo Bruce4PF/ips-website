@@ -1,22 +1,29 @@
-import Hover from "@/animations/Hover";
-import { Box, Flex, Avatar, Text, useColorModeValue } from "@chakra-ui/react";
+import React from 'react';
+import { VStack, Image, Text } from '@chakra-ui/react';
 
-const TeamMemberBox: React.FC<{ member: { name: string, position: string, image: string } }> = ({ member }) => {
-    const boxShadow = useColorModeValue(
-        '2px 2px 6px rgba(174, 174, 192, 0.40)', // Light mode shadow
-        '2px 2px 6px rgba(8, 8, 14, 0.40)'  // Dark mode shadow
-    );
+interface TeamMember {
+    name: string;
+    position: string;
+    image: string;
+}
 
+interface TeamMemberBoxProps {
+    member: TeamMember;
+}
+
+const TeamMemberBox: React.FC<TeamMemberBoxProps> = ({ member }) => {
     return (
-        <Hover>
-            <Box p={4} borderRadius="lg" width="200px" height="auto" boxShadow={boxShadow}>
-                <Flex direction="column" align="center" justify="center" height="100%">
-                    <Avatar size={"3xl"} name={member.name} src={member.image} mb={4} />
-                    <Text fontWeight="bold">{member.name}</Text>
-                    <Text>{member.position}</Text>
-                </Flex>
-            </Box>
-        </Hover>
+        <VStack spacing={2} minWidth="150px" maxWidth="150px">
+            <Image
+                src={member.image}
+                alt={member.name}
+                borderRadius="full"
+                boxSize="120px"
+                objectFit="cover"
+            />
+            <Text fontWeight="bold" textAlign="center">{member.name}</Text>
+            <Text textAlign="center">{member.position}</Text>
+        </VStack>
     );
 };
 

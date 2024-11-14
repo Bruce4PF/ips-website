@@ -1,5 +1,5 @@
 import Hover from "@/animations/Hover";
-import { Center, chakra, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, useColorModeValue } from "@chakra-ui/react";
+import { Box, Center, chakra, Flex, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, useColorModeValue } from "@chakra-ui/react";
 import Team2023 from "./Team2023";
 import Team2024 from "./Team2024";
 
@@ -30,25 +30,28 @@ const OurTeam: React.FC = () => {
     })
 
     return (
-        <Center flexDirection="column" maxWidth="100%" gap={20}>
-            <Heading fontSize="5xl">
-                Our Team
-            </Heading>
-            <Tabs variant='soft-rounded'>
-                <Center>
-                    <TabList gap={5}>
-                        <Hover>
-                            <CustomTab fontWeight='bold'>
-                                2024
-                            </CustomTab>
-                        </Hover>
-                        <Hover>
-                            <CustomTab fontWeight='bold' >
-                                2023
-                            </CustomTab>
-                        </Hover>
-                    </TabList>
-                </Center>
+        <Box flexDirection="column" maxWidth="100%">
+
+            <Tabs variant='soft-rounded' mt={10}>
+                <Flex flexDirection='row' justifyContent="space-between">
+                    <Heading fontSize="5xl">
+                        Our Team
+                    </Heading>
+                    <Center>
+                        <TabList gap={5}>
+                            <Hover>
+                                <CustomTab fontWeight='bold'>
+                                    2024
+                                </CustomTab>
+                            </Hover>
+                            <Hover>
+                                <CustomTab fontWeight='bold' >
+                                    2023
+                                </CustomTab>
+                            </Hover>
+                        </TabList>
+                    </Center>
+                </Flex>
 
                 <TabPanels mt='3rem'>
                     <TabPanel>
@@ -60,7 +63,7 @@ const OurTeam: React.FC = () => {
                 </TabPanels>
 
             </Tabs>
-        </Center>
+        </Box>
     );
 }
 

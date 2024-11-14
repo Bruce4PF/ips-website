@@ -21,7 +21,7 @@ const ParallaxImages: React.FC = () => {
                 src="/Cone Purple.png"
                 alt="Image 1"
                 position="absolute"
-                top="2%"
+                top="1%"
                 left="65%"
                 transform={`translateY(${scrollY * 0.6}px)`}
                 transition="transform 0.1s ease-out"
@@ -31,8 +31,8 @@ const ParallaxImages: React.FC = () => {
                 src="/Round Cube Purple.png"
                 alt="Image 2"
                 position="absolute"
-                top="10%"
-                right="12%"
+                top="7%"
+                right="9%"
                 transform={`translateY(${scrollY * 0.40}px)`}
                 transition="transform 0.1s ease-out"
                 zIndex={-9999}
@@ -41,7 +41,7 @@ const ParallaxImages: React.FC = () => {
                 src="/Sphere Purple.png"
                 alt="Image 3"
                 position="absolute"
-                top="18%"
+                top="13%"
                 left="65%"
                 transform={`translateY(${scrollY * 0.06}px)`}
                 transition="transform 0.1s ease-out"
@@ -51,7 +51,7 @@ const ParallaxImages: React.FC = () => {
                 src="/Round Cube Green.png"
                 alt="Image 3"
                 position="absolute"
-                top="18%"
+                top="13%"
                 left="30%"
                 transform={`translateY(${scrollY * 0.15}px)`}
                 transition="transform 0.1s ease-out"
@@ -61,7 +61,7 @@ const ParallaxImages: React.FC = () => {
                 src="/Sphere Green.png"
                 alt="Image 5"
                 position="absolute"
-                top="4%"
+                top="3%"
                 left="25%"
                 transform={`translateY(${scrollY * 0.70}px)`}
                 transition="transform 0.1s ease-out"
@@ -71,8 +71,8 @@ const ParallaxImages: React.FC = () => {
                 src="/Cone Green.png"
                 alt="Image 6"
                 position="absolute"
-                top="10%"
-                left="10%"
+                top="8%"
+                left="7%"
                 transform={`translateY(${scrollY * 0.40}px)`}
                 transition="transform 0.1s ease-out"
                 zIndex={-9999}
