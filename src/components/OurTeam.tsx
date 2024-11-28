@@ -18,14 +18,17 @@ const OurTeam: React.FC = () => {
             _selected: {
                 color: CustomColor,
                 bg: CustomBg,
-                boxShadow: innerShadow
+                boxShadow: innerShadow,
+                borderRadius: '12px'
             },
             _hover: {
                 color: CustomColor,
                 bg: CustomBg,
-                boxShadow: innerShadow
+                boxShadow: innerShadow,
+                borderRadius: '12px'
             },
             color: inactiveColor,
+            borderRadius: '12px'
         }
     })
 
