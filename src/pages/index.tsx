@@ -23,16 +23,14 @@ export default function Home(): JSX.Element {
 
       <Header />
 
-      <Container maxWidth='container.lg' centerContent pt={250} pb={40} gap={150}>
+      <Container maxWidth='container.lg' centerContent pt={250} pb={20} gap={150}>
         <Hero />
         <AlumniPlacements />
         <AboutUs />
         <OurProductLine />
         <Events />
         <OurTeam />
-
       </Container>
-
       <Footer />
       <ParallaxImages />
 

@@ -9,7 +9,7 @@ const Events = () => {
                 <Heading fontSize="5xl">
                     Events
                 </Heading>
-                <Box mt={20} width="70%" justifySelf="center">
+                <Box mt={10} width="70%" justifySelf="center">
                     <InstagramEmbed />
                 </Box>
             </Box >

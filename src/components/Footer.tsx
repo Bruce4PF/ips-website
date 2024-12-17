@@ -1,14 +1,12 @@
 import FadeInUp from '@/animations/FadeInUp';
 import { ButtonGroup, Container, IconButton, Stack, Text, Image, Flex, Spacer, Link, useColorMode } from '@chakra-ui/react';
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
-    const websiteUrl = 'https://www.chucklechallenge.com';
-    const shareText = 'Chuckle Challenge: The AI tracking Try Not To Laugh Challenge!';
 
-    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(websiteUrl)}`;
-    const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(websiteUrl)}`;
-    const linkedInShareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(websiteUrl)}&title=${encodeURIComponent(shareText)}`;
+    const instagramShareUrl = 'https://www.instagram.com/iveyproductsociety_/'
+    const linkedinShareUrl =  'https://www.linkedin.com/company/ivey-product-society/'
+    const facebookShareUrl = 'https://www.facebook.com/iveyproduct/'
 
     const { colorMode } = useColorMode();
     const IPSLogo = colorMode === "dark" ? "../IPS Full Logo Dark.png" : "../IPS Full Logo.png";
@@ -31,24 +29,24 @@ const Footer: React.FC = () => {
                             <ButtonGroup variant="tertiary">
                                 <IconButton
                                     as="a"
-                                    href={facebookShareUrl}
+                                    href={instagramShareUrl}
                                     target="_blank"
-                                    aria-label='Facebook'
+                                    aria-label='Instagram'
                                     icon={<FaInstagram fontSize="1.25rem" />}
                                 />
                                 <IconButton
                                     as="a"
-                                    href={twitterShareUrl}
-                                    target="_blank"
-                                    aria-label="Twitter"
-                                    icon={<FaTwitter fontSize="1.25rem" />}
-                                />
-                                <IconButton
-                                    as="a"
-                                    href={linkedInShareUrl}
+                                    href={linkedinShareUrl}
                                     target="_blank"
                                     aria-label="LinkedIn"
                                     icon={<FaLinkedin fontSize="1.25rem" />}
+                                />
+                                <IconButton
+                                    as="a"
+                                    href={facebookShareUrl}
+                                    target="_blank"
+                                    aria-label="Facebook"
+                                    icon={<FaFacebook fontSize="1.25rem" />}
                                 />
                             </ButtonGroup>
                         </Flex>

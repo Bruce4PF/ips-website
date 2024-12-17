@@ -41,13 +41,13 @@ const AboutUs: React.FC = () => {
                     </TabFadeInUp>
                     <TabFadeInUp index={1}>
                         <Text color={textColor}>
-                            We run an annual product fellowship, host workshops throughout the year,
+                            We run an HBA2 course, annual product fellowship bootcamp, host events throughout the year,
                             and provide career resources for students looking to break into product management!
                         </Text>
                     </TabFadeInUp>
                     <TabFadeInUp index={1}>
                         <Text color={textColor}>
-                            Bleeh blaah blooh blarghh I can't think of anything else to write so I'll wait for other people's opinions to fill out this section. Can't do it lmao
+                            We welcome students from all backgrounds and levels of experience, and are always looking for new members to join our team!
                         </Text>
                     </TabFadeInUp>
                     <TabFadeInUp index={2}>
@@ -59,7 +59,7 @@ const AboutUs: React.FC = () => {
                             textShadow: '1px 1px 10px rgba(220, 192, 255, 0.25)',
                           }} 
                         >
-                            We also do some cool stuff like the digital product management course, please give us money!
+                            If you're interested in learning about product management, building products, or breaking into the tech industry, we'd love to meet you!
                         </Text>
                     </TabFadeInUp>
                 </Stack>
