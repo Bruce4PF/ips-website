@@ -1,17 +1,19 @@
 import React from "react";
 import InstagramEmbed from "./Instagram";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Center } from "@chakra-ui/react";
 
 const Events = () => {
     return (
         <>
-            <Box flexDirection="column" alignSelf="flex-start" width="100%">
+            <Box flexDirection="column" width="100%">
                 <Heading fontSize="5xl">
                     Events
                 </Heading>
-                <Box mt={10} width="70%" justifySelf="center">
-                    <InstagramEmbed />
-                </Box>
+                <Center>
+                    <Box mt={10} width="70%" justifySelf="center">
+                        <InstagramEmbed />
+                    </Box>
+                </Center>
             </Box >
         </>
     );

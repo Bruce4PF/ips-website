@@ -15,14 +15,14 @@ const Header: React.FC = () => {
     <Box position="fixed" top="0" zIndex="999999999" w="full">
       <Container maxWidth="container.lg" pl={4} pr={4} pt={8} pb={2}>
         <Flex alignItems="center" h="3.5rem">
-          <Center>
+          {/* <Center>
             <Image
               src={logoSrc}
               height="100"
               onClick={handleLogoClick}
               style={{ cursor: "pointer" }}
             />
-          </Center>
+          </Center> */}
           <Spacer />
           <Flex gap="3">
             <ThemeToggle />

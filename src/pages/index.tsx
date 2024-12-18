@@ -4,6 +4,7 @@ import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Logo from "@/components/Logo";
 import OurProductLine from "@/components/OurProductLine";
 import OurTeam from "@/components/OurTeam";
 import ParallaxImages from "@/components/ParallaxImages";
@@ -12,7 +13,6 @@ import { ChakraProvider, Container } from "@chakra-ui/react";
 import Head from "next/head";
 
 export default function Home(): JSX.Element {
-
   return (
     <ChakraProvider theme={theme}>
       <Head>
@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
       </Head>
 
       <Header />
-
+      <Logo />
       <Container maxWidth='container.lg' centerContent pt={250} pb={20} gap={150}>
         <Hero />
         <AlumniPlacements />

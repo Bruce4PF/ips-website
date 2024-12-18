@@ -5,11 +5,14 @@ import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 const Footer: React.FC = () => {
 
     const instagramShareUrl = 'https://www.instagram.com/iveyproductsociety_/'
-    const linkedinShareUrl =  'https://www.linkedin.com/company/ivey-product-society/'
+    const linkedinShareUrl = 'https://www.linkedin.com/company/ivey-product-society/'
     const facebookShareUrl = 'https://www.facebook.com/iveyproduct/'
 
     const { colorMode } = useColorMode();
     const IPSLogo = colorMode === "dark" ? "../IPS Full Logo Dark.png" : "../IPS Full Logo.png";
+    const handleLogoClick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
     return (
         <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }} maxWidth='container.md'>
@@ -19,6 +22,8 @@ const Footer: React.FC = () => {
                         <Image
                             src={IPSLogo}
                             height="90"
+                            onClick={handleLogoClick}
+                            style={{ cursor: "pointer" }}
                         />
                     </FadeInUp>
                     <FadeInUp index={1}>
@@ -60,9 +65,9 @@ const Footer: React.FC = () => {
                     </FadeInUp>
                     <Spacer />
                     <FadeInUp index={3}>
-                            <Text fontSize="sm" color="fg.subtle">
-                                Made with ❤️ in Canada
-                            </Text>
+                        <Text fontSize="sm" color="fg.subtle">
+                            Made with ❤️ in Canada
+                        </Text>
                     </FadeInUp>
                 </Flex>
             </Stack>
