@@ -2,7 +2,7 @@
 
 ## About the Website
 The Ivey Product Society website is designed to showcase the activities, team members, and events of the Ivey Product Society.
-NOTE: This website is not optimized for mobile users - for the full experience, please access this site on desktop.
+**NOTE: This website is not optimized for mobile users - for the full experience, please access this site on desktop.**
 
 ## Technologies Used
 - **Next.js**: A React framework for building server-side rendered and static web applications.
