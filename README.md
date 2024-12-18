@@ -1,16 +1,58 @@
-# Chuckle Challenge
+# Ivey Product Society Website
 
-## Project Description
+## About the Website
+The Ivey Product Society website is designed to showcase the activities, team members, and events of the Ivey Product Society.
 
-Chuckle Challenge is an online web application that takes a spin on the classic "Try Not To Laugh Challenge".
-Inspired by the recent surge in AI, this project was created to capitalize on these emerging technologies.
+## Technologies Used
+- **Next.js**: A React framework for building server-side rendered and static web applications.
+- **React**: A JavaScript library for building user interfaces.
+- **Node.js**: A JavaScript runtime for building scalable network applications.
+- **Chakra UI**: A simple, modular, and accessible component library for React.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
-Employing the FER-2013 dataset from Kaggle, Python and TensorFlow are used to configure a convolutional neural network (CNN) model for facial emotion recognition. Using data augmentation techniques during preprocessing, the CNN model achieves an 84% testing accuracy.
+## Features
+- **Responsive Design**: The website is fully responsive and has server-side rendering.
+- **Team Member Profiles**: Displays profiles of the team members with their roles and LinkedIn links.
+- **Instagram Embed**: Embeds the Instagram feed of the Ivey Product Society.
+- **Theme Toggle**: Allows users to switch between light and dark themes.
+- **GitHub Link**: Provides a link to the GitHub repository of the website.
 
-Deployed on AWS EC2, the backend relies on a Flask and Nginx reverse proxy server hosting the CNN model, and for cross-communication between the front-end deployed on Vercel, respectively.
+## Want to contribute or make something similar?
+To run the website locally, follow these steps:
 
-Built on Next.js, the front-end utilizes modern languages & libraries such as React.js, TypeScript, Chakra UI, Tailwind CSS, and Framer Motion to leverage static rendering.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/Bruce4PF/ips-website.git
+    cd ips-website
+    ```
 
-Go to https://www.chucklechallenge.com/ to play!
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
 
-Note: Application does not work on mobile
+3. **Run the development server**:
+    ```sh
+    npm run dev
+    ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## Project Structure
+- **components**: Contains the React components used in the website.
+- **pages**: Contains the Next.js pages.
+- **public**: Contains static assets like images.
+- **styles**: Contains the global styles and theme configuration.
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+For any inquiries or issues, please contact Bruce Liu at [bliu.hba2025@ivey.ca].
+
+---
+
+Built by Bruce Liu, 2024.
