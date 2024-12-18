@@ -14,9 +14,9 @@ const ThemeToggle: React.FC = () => {
 
   const CustomIconButton = chakra(IconButton, {
     baseStyle: {
-      boxShadow: innerShadow,
+      boxShadow: 'transparent',
       _hover: {
-        bg: CustomHoverBg,
+        bg: 'transparent',
         bgOpacity: '0%',
       }
     }
@@ -27,7 +27,7 @@ const ThemeToggle: React.FC = () => {
       aria-label="theme toggle"
       icon={colorMode === 'light' ? <RiMoonFill /> : <RiSunLine />}
       onClick={toggleColorMode}
-      bg={CustomBg}
+      bg={'transparent'}
     />
   );
 };
