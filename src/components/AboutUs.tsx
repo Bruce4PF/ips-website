@@ -35,14 +35,15 @@ const AboutUs: React.FC = () => {
                     </TabFadeInUp>
                     <TabFadeInUp index={1}>
                         <Text color={textColor}>
-                            Led by Ivey alumni working in product, we're a team of students with the mission to transform
-                            Western University and Ivey Business School into Canada's leading target school for careers in product management.
+                            We're a team of Western University and Ivey Business School alumni and students,
+                            driven by a shared passion for product. We're on a mission to transform Western and Ivey as
+                            Canada's top school for product management by providing students with the necessary resources to grow their product careers.
                         </Text>
                     </TabFadeInUp>
                     <TabFadeInUp index={1}>
                         <Text color={textColor}>
                             We run an HBA2 course, annual product fellowship bootcamp, host events throughout the year,
-                            and provide career resources for students looking to break into product management!
+                            and provide career resources for students looking to break into product management.
                         </Text>
                     </TabFadeInUp>
                     <TabFadeInUp index={1}>
@@ -51,13 +52,13 @@ const AboutUs: React.FC = () => {
                         </Text>
                     </TabFadeInUp>
                     <TabFadeInUp index={2}>
-                        <Text 
-                        fontWeight='medium'
-                        bgGradient="linear(to-l, #9453FF, #43B87E)"
-                        bgClip="text"
-                        css={{
-                            textShadow: '1px 1px 10px rgba(220, 192, 255, 0.25)',
-                          }} 
+                        <Text
+                            fontWeight='medium'
+                            bgGradient="linear(to-l, #9453FF, #43B87E)"
+                            bgClip="text"
+                            css={{
+                                textShadow: '1px 1px 10px rgba(220, 192, 255, 0.25)',
+                            }}
                         >
                             If you're interested in learning about product management, building products, or breaking into the tech industry, we'd love to meet you!
                         </Text>
