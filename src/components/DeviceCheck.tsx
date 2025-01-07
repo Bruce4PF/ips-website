@@ -5,7 +5,7 @@ const DeviceCheck = ({ children }: { children: JSX.Element }) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const userAgent = navigator.userAgent || navigator.vendor;
         if (/android|iPad|iPhone|iPod/.test(userAgent)) {
             setIsMobile(true);
         }
