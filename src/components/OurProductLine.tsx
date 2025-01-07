@@ -17,10 +17,7 @@ const OurProductLine: React.FC = () => {
                 images={[
                     { src: "/HBA2 Digital Product Management.png", alt: "HBA2 Course Digital Product Management" },
                     { src: "/Product Fellowship Bootcamp.png", alt: "Product Fellowship Bootcamp" },
-                    { src: "/Headshots/Bruce Liu.jpg", alt: "Product Line 3" },
-                    { src: "/Headshots/Shubh Patel.jpeg", alt: "Product Line 4" },
-                    { src: "/Headshots/Bruce Liu.jpg", alt: "Product Line 5" },
-                    { src: "/Headshots/Shubh Patel.jpeg", alt: "Product Line 6" }
+                    { src: "/Events and Workshops.png", alt: "Events and Workshops" },
                 ]}
             />
 

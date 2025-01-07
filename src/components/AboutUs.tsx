@@ -53,7 +53,7 @@ const AboutUs: React.FC = () => {
                     </TabFadeInUp>
                     <TabFadeInUp index={2}>
                         <Text
-                            fontWeight='medium'
+                            fontWeight='bold'
                             bgGradient="linear(to-l, #9453FF, #43B87E)"
                             bgClip="text"
                             css={{
