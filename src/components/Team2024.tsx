@@ -21,10 +21,10 @@ const teamMembers = [
     { name: "Claire Zhang", position: "Director Fellowship", image: "/Headshots2024/Claire Zhang.JPG", linkedin: "https://www.linkedin.com/in/clairezhangg/" },
     { name: "Luther Yuen", position: "Director Fellowship", image: "/Headshots2024/Luther Yuen.JPG", linkedin: "https://www.linkedin.com/in/lutheryuen/" },
     { name: "Collin Sobowale", position: "Director Fellowship", image: "/Headshots2024/Collin Sobowale.png", linkedin: "https://www.linkedin.com/in/collinsbwle/" },
-    { name: "Grace Zhou", position: "VP Careers", image: "/Headshots2024/Grace Zhou.jpeg", linkedin: "https://www.linkedin.com/in/grace-zhou-6364b717b/" },
+    { name: "Grace Zhou", position: "VP Careers", image: "/Headshots2024/Grace Zhou.JPG", linkedin: "https://www.linkedin.com/in/grace-zhou-6364b717b/" },
     { name: "Dennis Zhang", position: "VP Careers", image: "/Headshots2024/Dennis Zhang.jpg", linkedin: "https://www.linkedin.com/in/dennis-zhang99/" },
     { name: "Sarina Cheng", position: "Director Careers", image: "/Headshots2024/Sarina Cheng.jpg", linkedin: "https://www.linkedin.com/in/sarinacheng/" },
-    { name: "Laurel Dong", position: "Director Careers", image: "/Headshots2024/Laurel Dong.png", linkedin: "https://www.linkedin.com/in/laurel-dong/" },
+    { name: "Laurel Dong", position: "Director Careers", image: "/Headshots2024/Laurel Dong.jpg", linkedin: "https://www.linkedin.com/in/laurel-dong/" },
     { name: "Sarah Huang", position: "Director Careers", image: "/Headshots2024/Sarah Huang.jpeg", linkedin: "https://www.linkedin.com/in/sarahpeihuang/" },
     { name: "Ryanna Luo", position: "Director Careers", image: "/Headshots2024/Ryanna Luo.JPG", linkedin: "https://www.linkedin.com/in/ryannaluo/" },
 ];
